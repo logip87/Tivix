@@ -1,0 +1,38 @@
+{
+  "name": "tivix",
+  "version": "1.0.0",
+  "description": "QA Recruitment Task",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/integration/steps/[filepath].{js,ts}"
+    ],
+    "html": {
+      "enabled": true
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.3.3",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3"
+  }
+}
