@@ -25,7 +25,7 @@ class CarRentFormPage extends BasePage {
     }
 
     carRentFormIsVisible() {
-        cy.get(form.CAR_RENT_FORM).should('be.visible');
+        this.assertElementVisible(form.CAR_RENT_FORM);
     }
 
     enterPickUpDate() {
@@ -40,6 +40,10 @@ class CarRentFormPage extends BasePage {
 
     alertWithTextIsNotVisible(alert) {
         cy.contains(form.ALERT, alert).should('not.exist');
+    }
+
+    carRentSearchResultsVisible(){
+        this.assertElementVisible(form.SEARCH_RESULTS);
     }
 }
 

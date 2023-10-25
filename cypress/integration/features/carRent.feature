@@ -12,3 +12,5 @@ Feature: Car rent
     Then I should not see alert "Please fill pickup and drop off dates"
 
   Scenario: Search for example car model
+  Given I can see the car rent search results
+  Then I can see the #: "1", Company: "Russell Inc", Model: "Ursus C360", License plate: "KUL 102" and Price per day: "26$" on the list

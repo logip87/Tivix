@@ -37,3 +37,16 @@ When('I click on search button', () => {
 Then('I should not see alert {string}', (alert) => {
   carRentFormPage.alertWithTextIsNotVisible(alert);
 });
+
+Given('I can see the car rent search results', () => {
+  carRentFormPage.carRentSearchResultsVisible();
+});
+
+// eslint-disable-next-line max-len
+Then('I can see the #: {string}, Company: {string}, Model: {string}, License plate: {string} and Price per day: {string} on the list', (number, company, model, licensePlate, price) => {
+  carRentFormPage.checkTableValues('#', number);
+  carRentFormPage.checkTableValues('Company', company);
+  carRentFormPage.checkTableValues('Model', model);
+  carRentFormPage.checkTableValues('License plate', licensePlate);
+  carRentFormPage.checkTableValues('Price per day', price);
+});
