@@ -43,10 +43,11 @@ Given('I can see the car rent search results', () => {
 });
 
 // eslint-disable-next-line max-len
-Then('I can see the #: {string}, Company: {string}, Model: {string}, License plate: {string} and Price per day: {string} on the list', (number, company, model, licensePlate, price) => {
+Then('I can see the #: {string}, Company: {string}, Model: {string}, License plate: {string}, Price: {string} and Price per day: {string} on the list', (number, company, model, licensePlate, price, pricePerDay) => {
   carRentFormPage.checkTableValues('#', number);
   carRentFormPage.checkTableValues('Company', company);
   carRentFormPage.checkTableValues('Model', model);
   carRentFormPage.checkTableValues('License plate', licensePlate);
-  carRentFormPage.checkTableValues('Price per day', price);
+  carRentFormPage.checkTableValues('Price', price);
+  carRentFormPage.checkTableValues('Price per day', pricePerDay);
 });
