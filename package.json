@@ -16,7 +16,7 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
     "stepDefinitions": [
-      "cypress/integration/steps/[filepath].{js,ts}"
+      "cypress/integration/steps/*.js"
     ],
     "html": {
       "enabled": true

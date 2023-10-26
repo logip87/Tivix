@@ -7,5 +7,6 @@ export const form = {
     DROP_OFF_DATE_INPUT: '[id="dropoff"]',
     ALERT: '[class="alert alert-danger"]',
     SEARCH_BUTTON: '[class="btn btn-primary"]',
-    SEARCH_RESULTS: '[id="search-results"]'
+    SEARCH_RESULTS: '[id="search-results"]',
+    RENT_BUTTON: '[class="btn btn-success"]'
 };

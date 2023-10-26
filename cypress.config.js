@@ -4,6 +4,7 @@ const { createEsbuildPlugin } = require('@badeball/cypress-cucumber-preprocessor
 
 module.exports = {
   e2e: {
+    watchForFileChanges: false,
     baseUrl: 'https://qalab.pl.tivixlabs.com/',
     specPattern: 'cypress/integration/features/*.feature',
     supportFile: 'cypress/support/e2e.js',

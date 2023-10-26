@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import { summary } from '../../support/selectors/carRentSummarySelectors';
 export default class BasePage {
     goToUrl(url) {
         cy.visit(url);
@@ -19,6 +20,11 @@ export default class BasePage {
 
     clickOn(locator) {
         cy.get(locator).should('be.visible').click();
+    }
+
+
+    clickOnFirst(locator) {
+        cy.get(locator).eq(0).should('be.visible').click();
     }
 
     assertElementVisible(locator) {
@@ -46,5 +52,20 @@ export default class BasePage {
                 });
             });
         }
+    }
+    getCardHeader() {
+        return cy.get(summary.CARD_HEADER).should('be.visible');
+    }
+
+    getCardTitle() {
+        return cy.get(summary.CARD_TITLE).should('be.visible');
+    }
+
+    getCardText() {
+        return cy.get(summary.CARD_TEXT).should('be.visible');
+    }
+
+    assertTextIsVisible(text) {
+        cy.contains(text).should('be.visible');
     }
 }

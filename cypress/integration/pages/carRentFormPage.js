@@ -45,6 +45,10 @@ class CarRentFormPage extends BasePage {
     carRentSearchResultsVisible(){
         this.assertElementVisible(form.SEARCH_RESULTS);
     }
+
+    clickOnRentButton(){
+        this.clickOnFirst(form.RENT_BUTTON);
+    }
 }
 
 
