@@ -4,6 +4,8 @@
   "description": "QA Recruitment Task",
   "main": "index.js",
   "scripts": {
+    "cy:run": "cypress run --browser chrome --headless",
+    "cy:open": "cypress open --browser chrome",
     "eslint": "eslint .",
     "prepare": "husky install"
   },
