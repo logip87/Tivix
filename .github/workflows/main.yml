@@ -27,8 +27,7 @@ jobs:
       - name: Move cucumber report
         run: |
           mkdir -p cypress/report
-          mv cucumber-report.html cypress/report/
-        if: success()  
+          mv cucumber-report.html cypress/report/  
 
       - uses: actions/upload-artifact@v3
         if: success()  
