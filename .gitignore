@@ -1,3 +1,8 @@
 /node_modules
 /cypress/screenshots
 /cypress/videos
+
+
+#Report
+cucumber-messages.ndjson
+cucumber-report.html
