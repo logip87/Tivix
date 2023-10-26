@@ -3,6 +3,7 @@ const { addCucumberPreprocessorPlugin } = require('@badeball/cypress-cucumber-pr
 const { createEsbuildPlugin } = require('@badeball/cypress-cucumber-preprocessor/esbuild');
 
 module.exports = {
+  projectId: 'jnmfq1',
   e2e: {
     watchForFileChanges: false,
     baseUrl: 'https://qalab.pl.tivixlabs.com/',
