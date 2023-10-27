@@ -94,7 +94,7 @@ Workflow also uploads a test report into the artifacts.
 
 - Personal data form can be submitted **without** providing an **email**.
 
-**Expected result**Expected result: User should not be able to submit form **without** providing an **email**.
+**Expected result**: User should not be able to submit form **without** providing an **email**.
 ##
 
 - **Submitting** a car rental form leads to an **error**.
